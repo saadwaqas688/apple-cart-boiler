@@ -4,8 +4,13 @@
 #!/bin/bash
 
 # Check for console.log in staged files
-if git diff --cached --name-only -- '*.js' '*.jsx' | xargs grep -n 'console\.log'; then
-  echo "Error: Found console.log statements in staged files. Please remove them before committing."
+
+RED="\033[1;31m"
+GREEN="\033[1;32m"
+NC="\033[0m"
+
+if git diff --cached --name-only -- '*.ts' '*.tsx' | xargs grep -n 'console\.log'; then
+  echo -e "${RED} ❌ unexpected console.log statements  ${NC}"
   exit 1
 fi
 
