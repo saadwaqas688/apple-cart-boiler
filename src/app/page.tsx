@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
-  console.log("erro");
+  console.log("errot");
   var a;
   return (
     <main className={styles.main}>
