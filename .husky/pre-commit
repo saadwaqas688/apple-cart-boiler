@@ -1,8 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npx lint-staged
-
 #!/bin/bash
 
 # Check for console.log in staged files
@@ -13,4 +11,8 @@ fi
 
 # If no issues are found, the commit proceeds.
 exit 0
+
+npx lint-staged
+
+
 
