@@ -8,7 +8,9 @@ export default function Home() {
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tasdfasxfdsga</code>
+          <code className={styles.code}>
+            src/app/page.tasdfasxfdsgasdfasdfaa
+          </code>
         </p>
         <div>
           <a
